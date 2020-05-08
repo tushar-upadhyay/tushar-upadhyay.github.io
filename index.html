@@ -48,19 +48,19 @@
       </h3>
       <div class="transitions">
         <a href="https://github.com/tushar-upadhyay">
-        <span style="font-size:35px;color:black;padding:10px;">
-          <i  class="fab fa-github"></i>
+          <span style="font-size:35px;color:black;padding:10px;">
+            <i class="fab fa-github"></i>
           </span>
-          </a>
-          <a href="https://instagram.com/tusharupadhyay_">
-        <span style="font-size:35px;color:red;padding:10px;">
-          <i class="fab fa-instagram"></i>
-        </span>
+        </a>
+        <a href="https://instagram.com/tusharupadhyay_">
+          <span style="font-size:35px;color:red;padding:10px;">
+            <i class="fab fa-instagram"></i>
+          </span>
         </a>
         <a href="https://twitter.com/Tusharpg77">
-        <span style="font-size:35px;color:blue;padding:10px;">
-          <i class="fab fa-twitter"></i>
-        </span>
+          <span style="font-size:35px;color:blue;padding:10px;">
+            <i class="fab fa-twitter"></i>
+          </span>
         </a>
       </div>
 
@@ -76,7 +76,7 @@
     <div id="next">
       <center>
         <div id="top-btn" style="padding-top:20px">
-          <a onclick="showTop()" href="#top" >
+          <a onclick="showTop()" href="#top">
             <div class="next">
               <span style="font-size:40px;">
                 <i class="fas fa-chevron-up"></i>
@@ -84,10 +84,17 @@
             </div>
           </a>
         </div>
-        <h2>My Projects</h2>
-        <div>
-          <div id="pro1" class="card" style="width: 18rem;visibility: hidden;">
+        <h2>My Apps</h2>
+        <div
+          style="display:flex;flex-direction:row;width: 100%;justify-content: space-evenly;flex-wrap: wrap;"
+        >
+          <div
+            id="pro1"
+            class="card"
+            style="width: 18rem;visibility: hidden;margin:10px"
+          >
             <img
+            style="max-height: 202px;"
               src="./assets/flutter_logo.png"
               class="card-img-top"
               alt="..."
@@ -103,13 +110,69 @@
               </span>
             </div>
           </div>
+          
+          <div
+            id="pro2"
+            class="card"
+            style="width: 18rem;margin:10px;visibility: hidden;"
+          >
+            <img
+           
+              src="./assets/react_native.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">React App</h5>
+              <p class="card-text">
+                React
+                Native Port of College App
+              </p>
+
+              <span class="btn btn-primary">
+                <i class="fas fa-code">Source code</i>
+              </span>
+            </div>
+          </div>
         </div>
-        <div id="pro2" class="card" style="width: 18rem;margin:10px;visibility: hidden;">
-          <img src="./assets/react_native.png" class="card-img-top" alt="..." />
+      </center>
+    </div>
+    <div>
+        <hr>
+        <center >
+        <h2>My Creative Art</h2>
+        </center>
+        <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
+            <div
+            class="card"
+            style="width: 18rem;margin:10px"
+          >
+            <img
+            style="max-height: 202px;"
+              src="./assets/fireworks.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fireworks Simulation</h5>
+              <p class="card-text">
+               Rockets Burst and Create Firewoks!Built with p5js
+              </p>
+              <span class="btn btn-primary">
+                <i class="fas fa-code">View</i>
+              </span>
+            </div>
+          </div>
+          <div
+          
+          class="card"
+          style="width: 18rem;margin:10px"
+        >
+        <iframe src="https://editor.p5js.org/tusharpg/embed/HAec-Oxpu"></iframe>
           <div class="card-body">
-            <h5 class="card-title">React App</h5>
+            <h5 class="card-title">College App</h5>
             <p class="card-text">
-              I Built IOS and Android application for my college in React Native
+              I Built IOS and Android application for my college in Flutter
             </p>
 
             <span class="btn btn-primary">
@@ -117,9 +180,10 @@
             </span>
           </div>
         </div>
-      </center>
-    </div>
+        
+        </div>
 
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

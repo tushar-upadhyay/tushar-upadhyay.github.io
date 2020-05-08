@@ -19,11 +19,11 @@ document.addEventListener('scroll',e=>{
         document.getElementById('next-btn').style.visibility = 'visible';
         document.getElementById('top-btn').style.visibility = 'hidden';
     }
-    if(window.scrollY>=262){
+    if(window.scrollY>=document.getElementById('pro1').offsetHeight){
         document.getElementById('pro1').style.visibility = "visible";
         document.getElementById('pro1').classList.add('pro1');
     }
-    if(window.scrollY>=460){
+    if(window.scrollY>document.getElementById('pro2').offsetHeight){
         document.getElementById('pro2').style.visibility = "visible";
         document.getElementById('pro2').classList.add('pro2');
     }
