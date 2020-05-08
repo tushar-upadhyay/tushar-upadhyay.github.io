@@ -1,0 +1,46 @@
+#img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    
+}
+.text{
+    color: white;
+}
+#profile{
+    margin-bottom: 40px;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+.transitions{
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+.pro1{
+    animation:fadeInLeft;
+    animation-duration: 2s;
+}
+.pro2{
+    animation:fadeInRight;
+    animation-duration: 2s;
+}
+.next{
+    animation:bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+body{
+    min-height: 100%;
+    background-image: url("./assets/Untitled (1).jpg");
+    background-size:100% 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.name{
+    display: flex;
+    align-items: center;
+    animation: fadeIn;
+    animation-duration:2s;
+}
