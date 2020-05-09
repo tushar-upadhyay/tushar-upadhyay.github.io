@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js"></script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -39,12 +39,12 @@
         <h1 style="padding-right:20px;">
           Hello!
         </h1>
-        <h1 class="text">
+        <h1 class="name">
           I'm Tushar
         </h1>
       </div>
-      <h3 class="transitions">
-        I Develop Apps!
+      <h3 id="text" class="text">
+       
       </h3>
       <div class="transitions">
         <a href="https://github.com/tushar-upadhyay">
@@ -84,7 +84,7 @@
             </div>
           </a>
         </div>
-        <h2>My Apps</h2>
+        <h2>My Projects</h2>
         <div
           style="display:flex;flex-direction:row;width: 100%;justify-content: space-evenly;flex-wrap: wrap;"
         >
@@ -94,8 +94,8 @@
             style="width: 18rem;visibility: hidden;margin:10px"
           >
             <img
-            style="max-height: 202px;"
-              src="./assets/flutter_logo.png"
+              style="max-height: 202px;"
+              src="./assets/LNCT_Bhopal_Logo.png"
               class="card-img-top"
               alt="..."
             />
@@ -104,20 +104,54 @@
               <p class="card-text">
                 I Built IOS and Android application for my college in Flutter
               </p>
-
-              <span class="btn btn-primary">
-                <i class="fas fa-code">Source code</i>
-              </span>
+              <div style="display: flex;justify-content: space-evenly;align-items: center;">
+              <a href="https://github.com/tushar-upadhyay/Flutter_college_app">
+              <button class="btn btn-primary">Source code</button>
+              </a>
+              <a href="https://newlnct.herokuapp.com">
+                <button class="btn btn-primary">Web App</button>
+                </a>
+              </div>
             </div>
           </div>
-          
+          <div id="pro2" class="card" style="width: 18rem;margin:10px;visibility: hidden;">
+            <img src="./assets/crypto.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">CryptoCurrency</h5>
+              <p class="card-text">
+                A fully functional implementation of Cryptocurrenty powered by Blockchain
+              </p>
+              <div style="display:flex;justify-content: space-evenly;">
+              <a href="https://github.com/tushar-upadhyay/medichain">
+                <button class="btn btn-primary">Source code</button>
+              </a>
+              <a href="https://ucointest.herokuapp.com">
+                <button class="btn btn-primary">View</button>
+              </a>
+              </div>
+
+            </div>
+          </div>
+          <div id="pro3" class="card" style="width: 18rem;margin:10px;visibility: hidden;">
+            <img src="./assets/blockchain.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Medical Blockchain</h5>
+              <p class="card-text">
+                Securing Medical Systems Using Blockchain
+              </p>
+              <a href="https://github.com/tushar-upadhyay/medichain">
+                <span class="btn btn-primary">
+                  <i class="fas fa-code">Source Code</i>
+                </span>
+              </a>
+            </div>
+          </div>
           <div
-            id="pro2"
+            id="pro4"
             class="card"
             style="width: 18rem;margin:10px;visibility: hidden;"
           >
             <img
-           
               src="./assets/react_native.png"
               class="card-img-top"
               alt="..."
@@ -125,10 +159,8 @@
             <div class="card-body">
               <h5 class="card-title">React App</h5>
               <p class="card-text">
-                React
-                Native Port of College App
+                React Native Port of College App
               </p>
-
               <span class="btn btn-primary">
                 <i class="fas fa-code">Source code</i>
               </span>
@@ -138,52 +170,62 @@
       </center>
     </div>
     <div>
-        <hr>
-        <center >
+      <hr />
+      <center>
         <h2>My Creative Art</h2>
-        </center>
-        <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
-            <div
-            class="card"
-            style="width: 18rem;margin:10px"
-          >
-            <img
-            style="max-height: 202px;"
-              src="./assets/fireworks.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">Fireworks Simulation</h5>
-              <p class="card-text">
-               Rockets Burst and Create Firewoks!Built with p5js
-              </p>
-              <span class="btn btn-primary">
-                <i class="fas fa-code">View</i>
-              </span>
-            </div>
-          </div>
-          <div
-          
-          class="card"
-          style="width: 18rem;margin:10px"
-        >
-        <iframe src="https://editor.p5js.org/tusharpg/embed/HAec-Oxpu"></iframe>
+      </center>
+      <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
+        <div class="card" style="width: 18rem;margin:10px">
+          <iframe
+            src="https://editor.p5js.org/tusharpg/embed/RagJTLbfj"
+          ></iframe>
           <div class="card-body">
-            <h5 class="card-title">College App</h5>
+            <h5 class="card-title">Algorithmic Botany</h5>
             <p class="card-text">
-              I Built IOS and Android application for my college in Flutter
+              Botany pattern Algorithm !Built with p5js
             </p>
-
-            <span class="btn btn-primary">
-              <i class="fas fa-code">Source code</i>
-            </span>
+            <a href="https://editor.p5js.org/tusharpg/sketches/uMtBwxc9v">
+              <span class="btn btn-primary">
+                <i class="fas fa-code">Source Code</i>
+              </span>
+            </a>
           </div>
         </div>
-        
+
+        <div class="card" style="width: 18rem;margin:10px">
+          <img src="./assets/game.jpg" alt="game_png" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Asteroid Game</h5>
+            <p class="card-text">
+              Classic Asteroid Game in Web canvas
+            </p>
+            <a href="https://editor.p5js.org/tusharpg/sketches/RL9bD0KPB">
+              <span class="btn btn-primary">
+                <i class="fas fa-code">Source Code</i>
+              </span>
+            </a>
+          </div>
         </div>
 
+        <div class="card" style="width: 18rem;margin:10px">
+          <iframe
+            src="https://editor.p5js.org/tusharpg/embed/HAec-Oxpu"
+          ></iframe>
+          <div class="card-body">
+            <h5 class="card-title">Archimedis Spiral</h5>
+            <p class="card-text">
+              Archimedis Spiral from scratch in p5js
+            </p>
+            <a href="https://editor.p5js.org/tusharpg/sketches/HAec-Oxpu">
+              <span class="btn btn-primary">
+                <i class="fas fa-code">Source code</i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="./index.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
