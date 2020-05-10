@@ -12,7 +12,7 @@ const projects = [
         {
             name:"CryptoCurrency",
             image:"./assets/crypto.png",
-            discription:" A fully functional implementation of Cryptocurrenty powered by Blockchain",
+            discription:" A fully functional implementation of Cryptocurrency powered by Blockchain",
             source:null,
             demo:"https://ucointest.herokuapp.com"
         },
