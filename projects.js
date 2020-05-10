@@ -24,6 +24,13 @@ const projects = [
             demo:null
         },
         {
+            name:"Flask Api System",
+            image:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/330px-Flask_logo.svg.png",
+            discription:"This is the back end of my college project in flask",
+            source:"https://github.com/tushar-upadhyay/lnctattendance",
+            demo:null
+        },
+        {
             name:"React App",
             image:"./assets/react_native.png",
             discription:"React Native Port of College App",
