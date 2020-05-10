@@ -38,10 +38,7 @@ html {
 }
 body{
     min-height: 100%;
-    background-image: url("./assets/Untitled (1).jpg");
-    background-size:100% 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
+  
 }
 .name{
     display: flex;

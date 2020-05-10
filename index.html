@@ -9,31 +9,47 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
+    <script src="./projects.js"></script>
+    <script src="./arts.js"></script>
     <script
       src="https://kit.fontawesome.com/184ebd5e3e.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function loaded(){
+        var loadingDiv = document.getElementById('loading');
+        document.body.removeChild(loadingDiv);
+        document.getElementById('content').style.visibility = "visible"
+      }
+    </script>
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <script
+    <!-- <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <title>Tushar Upadhyay</title>
   </head>
 
-  <body style="height: 100%;">
+  <body id="body" style="height: 100%;" onload="loaded()">
+    <div id="loading" style="display: flex;justify-content: center;align-items: center;flex: 1;height: 100%;">
+      <h1>
+        Loading....
+      </h1>
+    </div>
+    <div id="content" style="height:100%;visibility: hidden;">
     <div
       id="#top"
-      style="display: flex;justify-content: center;align-items: center;height: 100%;flex-direction: column;"
+      style="background-size:100% 100vh;background-position: center;background-repeat: no-repeat;background-image:url('./assets/back.jpg');display: flex;justify-content: center;align-items: center;height: 100%;flex-direction: column;"
     >
       <div id="profile">
-        <img id="img" width="200" src="assets/profile.jpeg" alt="profile_pic" />
+        <img class="img" id="img" width="200" src="assets/profile.jpeg" alt="profile_pic" />
       </div>
       <div class="name">
         <h1 style="padding-right:20px;">
@@ -43,9 +59,7 @@
           I'm Tushar
         </h1>
       </div>
-      <h3 id="text" class="text">
-       
-      </h3>
+      <h3 id="text" class="text"></h3>
       <div class="transitions">
         <a href="https://github.com/tushar-upadhyay">
           <span style="font-size:35px;color:black;padding:10px;">
@@ -86,87 +100,9 @@
         </div>
         <h2>My Projects</h2>
         <div
+          id="projects"
           style="display:flex;flex-direction:row;width: 100%;justify-content: space-evenly;flex-wrap: wrap;"
-        >
-          <div
-            id="pro1"
-            class="card"
-            style="width: 18rem;visibility: visible;margin:10px"
-          >
-            <img
-              style="max-height: 202px;"
-              src="./assets/LNCT_Bhopal_Logo.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">College App</h5>
-              <p class="card-text">
-                I Built IOS and Android application for my college in Flutter
-              </p>
-              <div style="display: flex;justify-content: space-evenly;align-items: center;">
-              <a href="https://github.com/tushar-upadhyay/Flutter_college_app">
-              <button class="btn btn-primary">Source code</button>
-              </a>
-              <a href="https://newlnct.herokuapp.com">
-                <button class="btn btn-primary">Web App</button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div id="pro2" class="card" style="width: 18rem;margin:10px;visibility: visible;">
-            <img src="./assets/crypto.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">CryptoCurrency</h5>
-              <p class="card-text">
-                A fully functional implementation of Cryptocurrenty powered by Blockchain
-              </p>
-              <div style="display:flex;justify-content: space-evenly;">
-              <a href="https://github.com/tushar-upadhyay/medichain">
-                <button class="btn btn-primary">Source code</button>
-              </a>
-              <a href="https://ucointest.herokuapp.com">
-                <button class="btn btn-primary">View</button>
-              </a>
-              </div>
-
-            </div>
-          </div>
-          <div id="pro3" class="card" style="width: 18rem;margin:10px;visibility: visible;">
-            <img src="./assets/blockchain.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Medical Blockchain</h5>
-              <p class="card-text">
-                Securing Medical Systems Using Blockchain
-              </p>
-              <a href="https://github.com/tushar-upadhyay/medichain">
-                <span class="btn btn-primary">
-                  <i class="fas fa-code">Source Code</i>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div
-            id="pro4"
-            class="card"
-            style="width: 18rem;margin:10px;visibility: visible;"
-          >
-            <img
-              src="./assets/react_native.png"
-              class="card-img-top"
-              alt="..."
-            />
-            <div class="card-body">
-              <h5 class="card-title">React App</h5>
-              <p class="card-text">
-                React Native Port of College App
-              </p>
-              <span class="btn btn-primary">
-                <i class="fas fa-code">Source code</i>
-              </span>
-            </div>
-          </div>
-        </div>
+        ></div>
       </center>
     </div>
     <div>
@@ -174,67 +110,14 @@
       <center>
         <h2>My Creative Art</h2>
       </center>
-      <div style="display: flex;flex-wrap: wrap;justify-content: space-evenly;">
-        <div class="card" style="width: 18rem;margin:10px">
-          <iframe
-            src="https://editor.p5js.org/tusharpg/embed/RagJTLbfj"
-          ></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Algorithmic Botany</h5>
-            <p class="card-text">
-              Botany pattern Algorithm !Built with p5js
-            </p>
-            <a href="https://editor.p5js.org/tusharpg/sketches/uMtBwxc9v">
-              <span class="btn btn-primary">
-                <i class="fas fa-code">Source Code</i>
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;margin:10px">
-          <img src="./assets/game.jpg" alt="game_png" class="card-img-top" />
-          <div class="card-body">
-            <h5 class="card-title">Asteroid Game</h5>
-            <p class="card-text">
-              Classic Asteroid Game in Web canvas
-            </p>
-            <a href="https://editor.p5js.org/tusharpg/sketches/RL9bD0KPB">
-              <span class="btn btn-primary">
-                <i class="fas fa-code">Source Code</i>
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <div class="card" style="width: 18rem;margin:10px">
-          <iframe
-            src="https://editor.p5js.org/tusharpg/embed/HAec-Oxpu"
-          ></iframe>
-          <div class="card-body">
-            <h5 class="card-title">Archimedis Spiral</h5>
-            <p class="card-text">
-              Archimedis Spiral from scratch in p5js
-            </p>
-            <a href="https://editor.p5js.org/tusharpg/sketches/HAec-Oxpu">
-              <span class="btn btn-primary">
-                <i class="fas fa-code">Source code</i>
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
+      <div id="arts"
+        style="display: flex;flex-wrap: wrap;justify-content: space-evenly;"
+      ></div>
     </div>
+    </div>
+
     <script src="./index.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
+    <script src="./createArts.js"></script>
+    <script src="./createProjects.js"></script>
   </body>
 </html>

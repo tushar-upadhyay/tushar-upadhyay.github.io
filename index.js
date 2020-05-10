@@ -1,13 +1,16 @@
-var text = document.getElementById('text');
-var skills = ['Android','Web','Blockchain','Artificial Intelligence','Ios'];
-var animations = ['fadeIn','zoomIn'];
-var index = 0;
+
+let text = document.getElementById('text');
+// ADD THE SKILL
+let skills = ['Android','Web','Blockchain','Artificial Intelligence','Ios'];
+// TO ADD MORE ANIMATIONS , JUST ADD THE NAME OF THE ANIMATION HERE
+let animations = ['fadeIn','zoomIn'];
+let index = 0;
 text.innerText = skills[index];
 text.className = "text";
 setInterval(()=>{
     index++;
-    var index_anim = Math.floor(Math.random()*2);
-    if(index>=5){
+    let index_anim = Math.floor(Math.random()*animations.length);
+    if(index>=skills.length){
         index=0;
     }
     text.style.animationName = animations[index_anim];
@@ -27,10 +30,21 @@ function showTop(){
     document.getElementById('next-btn').style.visibility = "visible";
     document.getElementById('top-btn').style.visibility = "hidden";
 }
-var p1 = false;
-var p2 = false;
-var p3 = false;
-var p4 = false;
+document.addEventListener('scroll',e=>{
+    if(window.scrollY>5){
+        console.log('t')
+        document.getElementById('next-btn').style.visibility = "hidden"
+    }
+    if(window.scrollY<5){
+        document.getElementById('next-btn').style.visibility = "visible"
+    }
+})
+
+// FOR ADDING ANIMATION WITH SCROLL (BUT I DONT LIKED IT SO COMMENTING THAT OUT)
+// let p1 = false;
+// let p2 = false;
+// let p3 = false;
+// let p4 = false;
 // document.addEventListener('scroll',handler);
 // function handler(){
 //         if(window.scrollY>5){
