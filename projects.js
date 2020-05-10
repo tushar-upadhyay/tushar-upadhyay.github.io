@@ -22,7 +22,7 @@ const projects = [
             discription:"Securing Medical Systems Using Blockchain",
             source:"https://github.com/tushar-upadhyay/medichain",
             demo:null
-        },
+        }
         {
             name:"React App",
             image:"./assets/react_native.png",
