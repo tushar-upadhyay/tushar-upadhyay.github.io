@@ -7,7 +7,7 @@ const projects = [
             image:"./assets/LNCT_Bhopal_Logo.png",
             discription:"I Built IOS and Android application for my college in Flutter",
             source:"https://github.com/tushar-upadhyay/Flutter_college_app",
-            demo:"https://newlnct.herokuapp.com"
+            demo:"https://tushar.live/lnct-web-app/"
         },
         {
             name:"CryptoCurrency",
