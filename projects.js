@@ -42,6 +42,6 @@ const projects = [
             image:"https://www.indiapost.gov.in/_layouts/15/images/DOP.Portal.UILayer/India_Post_Logo_With_Text.svg",
             discription:"A Node Based Web Scrapper to get details of speed post without entering CAPTCHA",
             source:"https://github.com/tushar-upadhyay/Speed-Post-Tracker",
-            demo:"http://speedposttrack.herokuapp.com/search/EI271333259IN",
+            demo:"http://speedposttrack.herokuapp.com/",
         },
     ]
