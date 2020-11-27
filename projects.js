@@ -10,11 +10,11 @@ const projects = [
             demo:"https://tushar.live/lnct-web-app/"
         },
         {
-            name:"Instagram Reels Downloader",
+            name:"Instagram Posts Downloader",
             image:"https://toppng.com/public/uploads/preview/ew-instagram-logo-transparent-related-keywords-logo-instagram-vector-2017-115629178687gobkrzwak.png",
-            discription:"Instagram reels downloader which returns a downloadable url of the particular video written in nodejs",
-            source:"https://github.com/tushar-upadhyay/Instagram-reels-downloader",
-            demo:null
+            discription:"Instagram Posts downloader which returns a downloadable url of the particular video written in ReactJS",
+            source:"https://github.com/tushar-upadhyay/Instagram-Posts-Downloader",
+            demo:"https://igposts.netlify.app"
         },
         {
             name:"CryptoCurrency",
